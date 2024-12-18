@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web site</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/todolist.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<body>
+   <div id="mbg">
+        <div id="bg">
+            <img src="./image/1img.jpg" alt="background"> 
+        </div>
+        <div id="img">
+        </div>
+    </div>
+   
+    <div id ="navi">
+        <div id ="icon">
+            <h2 class="logo">C MaRk</h2>
+        </div>
+        <ul>
+            <li> <a href=".\index.html">HOME</a</li>
+            <li> <a href=".\aboutus.html">ABOUT US</a</li>
+            <li> <a href=".\products.html">PRODUCTS</a></li>
+            <li> <a href=".\contactus.html">CONTACT US</a></li>
+            <li> <a href=".\todolist.html">CART</a></li>
+
+        </ul>
+
+        <div id="search">
+            <input id="srch" type="search" name="" placeholder="Type To text">
+            <a href="#"> <button id="btn">Search</button></a>
+
+           
+        </div>
+    </div>
+
+
+    <div id="content">
+ 
+        <div id="topic">
+            CART
+        </div> 
+
+
+        <div id="webtodo">
+          <h1> Your Shoping List</h1>
+          <div>
+              <input class="inp" type="text" placeholder="New Item" v-model="inBox">
+              <button id="add" v-on:click="btnclick">{{btnName}}</button>
+  
+  
+          </div><br><br><br>
+  
+          <ul>
+              <li v-for="(it, index) in webtaskList" :key="index">
+                  {{it}}
+                  <button v-on:click="updateTask(index)" style="background-image: url(./image/update.png);"></button>
+                  <button v-on:click="removeTask(index)" style="background-image: url(./image/delete.png);"></button>
+              </li>
+          </ul>
+          
+        </div>      
+
+
+        
+        <footer>
+            <ul id="inline">
+                <li><a href="#">Home <br> <img src="./image/home.icon.png" alt=""></a></li>
+                <li><a href="#">Services <br> <img src="./image/service.icon.jpg" alt=""></a></li>
+                <li><a href="#">About <br> <img src="./image/contact.icon.jpg" alt=""></a></li>
+                <li><a href="#">Terms <br> <img src="./image/Screenshot (59).png" alt=""></a></li>
+                <li><a href="#">Privacy Policy <br> <img src="./image/privacy.icon.png" alt=""></a></li>
+            </ul>
+            <p id="copyright">C Mark © 2022</p>
+        </footer>
+
+    </div>
+
+           
+    
+    <script src="./vuejs/todoapp.js"></script>  
+        
+    
+</body>
+</html>

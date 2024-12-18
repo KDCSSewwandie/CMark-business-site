@@ -1,0 +1,32 @@
+  #cnt h4{ 
+    /* text-align: center; */
+     color: #fff ;
+      font-size: 20px;
+     /* font-weight: bold;  */
+     margin-left: 60px; 
+     margin-top: 75px;  
+   
+    
+}
+
+#cnt{ 
+    
+    margin-bottom: 330px; 
+    margin-left: 295px;
+}
+
+img{ 
+    
+    background-position: top right;
+    background-color: rgba(0, 0, 0,0.65);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+
+ } 
+
+ 
+
+
+

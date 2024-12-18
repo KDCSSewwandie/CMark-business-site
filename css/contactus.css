@@ -1,0 +1,91 @@
+#mail{
+    background-color: rgba(240, 248, 255, 0.5);
+    width: 35%;
+    float: right;
+    margin-top: 80px;
+    margin-right: 22%;
+  
+
+}
+
+#mail  #title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#mail p{
+    margin-bottom: 0;
+    margin-left: 2%;
+}
+
+#mail input{
+    height: 20px;
+    width: 90%;
+    margin-bottom: 0;
+    margin-left: 2%;
+}
+
+#mail #msg{
+    margin-bottom: 0px;
+    height: 150px;
+    width: 90%;
+    margin-bottom: 0;
+    margin-left: 2%;
+}
+
+#mail #msg::placeholder{
+    position: absolute;
+}
+
+#mail button{
+    font-weight: bold;
+    float:right;
+    margin-top: 0;
+    margin-right: 8%;
+    margin-bottom: 12px;
+    height: 35px;
+    width: 30%;
+    cursor: pointer;
+    transition: transform 1a;
+}
+
+
+#socil{
+    float: left;
+    width: 15%;
+    margin: 5%;
+    margin-left: 15%;  
+   
+    
+}
+
+ #socil img{
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    transition: height 2s, width 2s;
+}
+
+#socil img:hover{
+    margin: 30px;
+    height: 200px;
+    width: 220px;}
+
+footer{
+    margin-top: 650px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
